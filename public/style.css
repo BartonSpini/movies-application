@@ -8,3 +8,9 @@ html, body {
     transform: translateY(-100%);
     text-align: center;
 }
+
+.jumbotron {
+    background-image: url(./img/logo.jpg);
+    background-size: cover;
+    height: 100%;
+}
