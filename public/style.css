@@ -10,7 +10,14 @@ html, body {
 }
 
 .jumbotron {
-    background-image: url(./img/logo.jpg);
+    background-image: url("img/vhs.jpeg");
     background-size: cover;
-    height: 100%;
+    color: white;
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+}
+
+.search-by-title-form {
+
 }

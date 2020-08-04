@@ -8,7 +8,7 @@ sayHello('World');
 /**
  * require style imports
  */
-const {getMovies} = require('./api.js');
+const {getMovies, postMovie} = require('./api.js');
 
 getMovies().then((movies) => {
     console.log('Here are all the movies:');
@@ -19,6 +19,9 @@ getMovies().then((movies) => {
     alert('Oh no! Something went wrong.\nCheck the console for details.')
     console.log(error);
 });
+
+
+//user data appends to api
 
 
 //When the initial ajax request comes back, remove the "loading..."
