@@ -9,15 +9,49 @@ html, body {
     text-align: center;
 }
 
-.jumbotron {
+#jumbotron {
     background-image: url("img/vhs.jpeg");
     background-size: cover;
-    color: white;
+    opacity: 75%;
     min-height: 400px;
-    text-align: center;
     display: flex;
+    align-items: center;
 }
 
-.search-by-title-form {
+.display-4 {
+    color: white;
+    margin-left: 5em;
+}
 
+.lead {
+    color: white;
+}
+
+#inputForm {
+    display:flex
+    align-content: space-between;
+}
+
+table{
+    border: 5px solid black;
+    text-align: center;
+    width: 90%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    border: 5px solid black;
+}
+
+th {
+    border: 5px solid black;
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+td {
+    border: 5px solid black;
 }

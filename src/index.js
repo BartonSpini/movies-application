@@ -36,8 +36,8 @@ let refreshMovies = function() {
     });
 }
 refreshMovies();
-//document.getElementById("search-by-title-button").addEventListener("click", postMovie);
 
+//document.getElementById("search-by-title-button").addEventListener("click", postMovie);
 
 const postBtn = document.querySelector('#search-by-title-button');
 postBtn.addEventListener('click', () => {
@@ -46,10 +46,6 @@ postBtn.addEventListener('click', () => {
        refreshMovies()
    })
 })
-
-
-
-
 
 // // message and replace it with HTML generated from the json response
 // // your code receives 
