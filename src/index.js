@@ -25,6 +25,7 @@ let refreshMovies = function() {
           <tr>
           <td>${title}</td>
           <td>${rating}</td>
+          
             <td>#button</td>
             </tr>
             `)
