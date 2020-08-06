@@ -1,22 +1,22 @@
 {
   "movies": [
     {
-      "title": "Top Gun",
-      "rating": "5",
-      "genre": "Action",
-      "id": 3
-    },
-    {
-      "title": "nonsense ",
-      "rating": "1",
-      "genre": "Action",
-      "id": 4
-    },
-    {
       "title": "Star Wars: A New Hope",
       "rating": "3",
       "genre": "Action",
       "id": 5
+    },
+    {
+      "title": "The Matrix",
+      "rating": "4",
+      "genre": "Action",
+      "id": 6
+    },
+    {
+      "title": "Lego Movie",
+      "rating": "5",
+      "genre": "Action",
+      "id": 7
     }
   ]
 }

@@ -8,11 +8,11 @@ sayHello('World');
 /**
  * require style imports
  */
-
-$(window).on("load", function(){
-    //$(".content").hidden;
-    $(".content").fadeOut("slow");
-});
+//
+// $(window).on("load", function(){
+//     //$(".content").hidden;
+//     $(".content").fadeOut("slow");
+// });
 
 
 
@@ -78,13 +78,7 @@ let clearForm = function () {
     formID.value = ``
     thisGenre.value = ``
 }
-// function SomeDeleteRowFunction(btndel) {
-//     if (typeof(btndel) == "object") {
-//         $(btndel).closest("tr").remove();
-//     } else {
-//         return false;
-//     }
-// }
+
 
 refreshMovies();
 const url = '/api/movies';

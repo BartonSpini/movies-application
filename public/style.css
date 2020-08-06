@@ -1,5 +1,7 @@
-html, body {
+body {
     height: 100%;
+    background-color: coral;
+
 }
 
 .container {
@@ -7,20 +9,15 @@ html, body {
     top: 50%;
     transform: translateY(-100%);
     text-align: center;
+    background-color: coral;
 }
 
 #jumbotron {
     background-image: url("img/vhs.jpeg");
     background-size: cover;
     min-height: 400px;
-    display: flex;
-    align-items: center;
-}
-
-.display-4 {
-    color: white;
-    font-size: xx-large;
-    margin-left: 5em;
+    color: Yellow;
+    font-size: larger;
 }
 
 .lead {
@@ -28,7 +25,7 @@ html, body {
 }
 
 #inputForm {
-    display:flex
+    display:flex;
     align-content: space-between;
 }
 
@@ -43,6 +40,7 @@ table{
     table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
+    background-color: coral;
 }
 
 tr {
@@ -59,3 +57,26 @@ th {
 td {
     border: 5px solid black;
 }
+
+
+#T-title {
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputForm {
+    background-color: green;
+
+}
+
+/*.loader {*/
+/*    position: fixed;*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    z-index: 9999;*/
+/*    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);*/
+/*    opacity: .0;*/
+/*}*/
