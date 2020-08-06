@@ -17,6 +17,12 @@
       "rating": "5",
       "genre": "Action",
       "id": 7
+    },
+    {
+      "title": "The Matrix Reloaded",
+      "rating": "4",
+      "genre": "Action",
+      "id": 9
     }
   ]
 }

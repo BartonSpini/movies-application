@@ -8,13 +8,11 @@ sayHello('World');
 /**
  * require style imports
  */
-//
+
 // $(window).on("load", function(){
 //     //$(".content").hidden;
 //     $(".content").fadeOut("slow");
 // });
-
-
 
 const {getMovie, getMovies, postMovie, patchMovie, deleteMovie} = require('./api.js');
 
@@ -31,14 +29,14 @@ let refreshMovies = function () {
         movies.forEach(({title, rating, id, genre}) => {
             console.log(`id#${id} - ${title} - rating: ${rating}`);
             insertMovie.innerHTML += (`
-        <tr>
-          <td>${title}</td>
-          <td>${rating}</td>
-          <td>${id}</td>
-          <td>${genre}</td>
-            <td> <a href ="#" data-id="${id}" class="edit-btn">Edit</a></td>
-            <td>  <a href ="#" data-id="${id}" class="del-btn">Delete</a> </td>
-        </tr>
+            <tr>
+                <td>${title}</td>
+                <td>${rating}</td>
+                <td>${id}</td>
+                <td>${genre}</td>
+                <td><a href ="#" data-id="${id}" class="edit-btn">Edit</a></td>
+                <td><a href ="#" data-id="${id}" class="del-btn">Delete</a></td>
+            </tr>
             `)
         });
 
@@ -68,9 +66,7 @@ let refreshMovies = function () {
         alert('Oh no! Something went wrong.\nCheck the console for details.')
         console.log(error);
     });
-
 }
-
 
 let clearForm = function () {
     movieTitle.value = ``
@@ -79,7 +75,7 @@ let clearForm = function () {
     thisGenre.value = ``
 }
 
-
+// BUTTON FUNCTION #1
 refreshMovies();
 const url = '/api/movies';
 $("#btn1").click(function () {
@@ -91,7 +87,8 @@ $("#btn1").click(function () {
         refreshMovies();
     })
 });
-//second submit button
+
+// BUTTOM FUNCTION #2
 $("#btn2").click(function () {
     let editMovie = {};
     editMovie.title = $("#changeMovieName").val();
@@ -103,11 +100,7 @@ $("#btn2").click(function () {
     });
 });
 
-//document.getElementById("search-by-title-button").addEventListener("click", postMovie);
-
-
-
-
+//BUTTON FUNCTION #3
 const postBtn = document.querySelector('#search-by-title-button');
 postBtn.addEventListener('click', () => {
     if (formID.value === "") {
@@ -117,7 +110,7 @@ postBtn.addEventListener('click', () => {
             refreshMovies()
         })
 
-    }else {
+    }else{
         patchMovie({title: movieTitle.value, rating: formRating.value, genre: thisGenre.value}, formID.value).then((data) => {
             console.log(data);
             clearForm()
@@ -125,10 +118,3 @@ postBtn.addEventListener('click', () => {
         })
     }
 })
-
-
-
-
-
-// // message and replace it with HTML generated from the json response
-// // your code receives 

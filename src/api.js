@@ -3,6 +3,7 @@ module.exports = {
         return fetch('/api/movies')
             .then(response => response.json());
     },
+
     getMovie: (id) => {
         return fetch(`/api/movies/${id}`)
             .then(response => response.json());
@@ -17,6 +18,7 @@ module.exports = {
             body: JSON.stringify(movie),
         });
     },
+
     patchMovie: (movie, id) => {
         return fetch(`api/movies/${id}`, {
             method: 'PATCH',
@@ -26,6 +28,7 @@ module.exports = {
             body: JSON.stringify(movie),
         });
     },
+
     deleteMovie: (id) => {
         return fetch(`api/movies/${id}`, {
             method: 'DELETE',

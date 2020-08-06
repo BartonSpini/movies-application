@@ -1,7 +1,5 @@
-body {
+html, body {
     height: 100%;
-    background-color: coral;
-
 }
 
 .container {
@@ -9,7 +7,6 @@ body {
     top: 50%;
     transform: translateY(-100%);
     text-align: center;
-    background-color: coral;
 }
 
 #jumbotron {
@@ -18,10 +15,7 @@ body {
     min-height: 400px;
     color: Yellow;
     font-size: larger;
-}
-
-.lead {
-    color: white;
+    opacity: 90%;
 }
 
 #inputForm {
@@ -40,7 +34,7 @@ table{
     table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
-    background-color: coral;
+    background-color: antiquewhite;
 }
 
 tr {
@@ -58,7 +52,6 @@ td {
     border: 5px solid black;
 }
 
-
 #T-title {
     font-size: 64px;
     justify-content: center;
@@ -66,17 +59,7 @@ td {
 }
 
 #inputForm {
-    background-color: green;
+    //background-color: green;
 
 }
 
-/*.loader {*/
-/*    position: fixed;*/
-/*    left: 0px;*/
-/*    top: 0px;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    z-index: 9999;*/
-/*    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);*/
-/*    opacity: .0;*/
-/*}*/
