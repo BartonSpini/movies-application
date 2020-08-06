@@ -104,6 +104,9 @@ $("#btn2").click(function () {
 
 //document.getElementById("search-by-title-button").addEventListener("click", postMovie);
 
+
+
+
 const postBtn = document.querySelector('#search-by-title-button');
 postBtn.addEventListener('click', () => {
     if (formID.value === "") {
