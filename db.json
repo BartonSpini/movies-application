@@ -1,49 +1,32 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
-      "id": 1
-    },
-    {
-      "title": "Star Wars: A New Hope",
+      "title": "Top Gun",
       "rating": "5",
-      "id": 2
-    },
-    {
-      "title": "hi",
-      "rating": "1",
+      "genre": "Action",
       "id": 3
     },
     {
-      "title": "doot",
+      "title": "nonsense ",
       "rating": "1",
+      "genre": "Action",
       "id": 4
     },
     {
-      "title": "doot",
-      "rating": "1",
+      "title": "Star Wars: A New Hope",
+      "rating": "3",
+      "genre": "Action",
       "id": 5
     },
     {
-      "title": "doot",
+      "title": "Top Gun",
       "rating": "1",
+      "genre": "Action",
       "id": 6
-    },
-    {
-      "title": "waiting",
-      "rating": "4",
-      "id": 7
-    },
-    {
-      "title": "space balls",
-      "rating": "5",
-      "id": 8
-    },
-    {
-      "title": "mash",
-      "rating": "3",
-      "id": 9
     }
   ]
 }
+
+
+//new api keys
+//use ombd api
