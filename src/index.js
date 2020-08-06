@@ -8,8 +8,15 @@ sayHello('World');
 /**
  * require style imports
  */
-const {getMovie, getMovies, postMovie, patchMovie, deleteMovie} = require('./api.js');
 
+$(window).on("load", function(){
+    //$(".content").hidden;
+    $(".content").fadeOut("slow");
+});
+
+
+
+const {getMovie, getMovies, postMovie, patchMovie, deleteMovie} = require('./api.js');
 
 const movieTitle = document.querySelector(`#title`)
 const formRating = document.querySelector(`#rating`)
@@ -24,14 +31,14 @@ let refreshMovies = function () {
         movies.forEach(({title, rating, id, genre}) => {
             console.log(`id#${id} - ${title} - rating: ${rating}`);
             insertMovie.innerHTML += (`
-          <tr>
+        <tr>
           <td>${title}</td>
           <td>${rating}</td>
           <td>${id}</td>
           <td>${genre}</td>
-                <td> <a href ="#" data-id="${id}" class="edit-btn">Edit</a></td>
-                  <td>  <a href ="#" data-id="${id}" class="del-btn">Delete</a> </td>
-            </tr>
+            <td> <a href ="#" data-id="${id}" class="edit-btn">Edit</a></td>
+            <td>  <a href ="#" data-id="${id}" class="del-btn">Delete</a> </td>
+        </tr>
             `)
         });
 
@@ -124,6 +131,9 @@ postBtn.addEventListener('click', () => {
         })
     }
 })
+
+
+
 
 
 // // message and replace it with HTML generated from the json response

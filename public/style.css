@@ -12,7 +12,6 @@ html, body {
 #jumbotron {
     background-image: url("img/vhs.jpeg");
     background-size: cover;
-    opacity: 75%;
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -20,6 +19,7 @@ html, body {
 
 .display-4 {
     color: white;
+    font-size: xx-large;
     margin-left: 5em;
 }
 
@@ -30,6 +30,10 @@ html, body {
 #inputForm {
     display:flex
     align-content: space-between;
+}
+
+#movieHeader {
+    margin-right: 2em;
 }
 
 table{
